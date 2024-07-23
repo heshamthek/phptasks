@@ -1,0 +1,35 @@
+Departments Table
+
+
+Department	VARCHAR(255)	Primary Key
+DepartmentHead	VARCHAR(255)	
+DepartmentLocation VARCHAR(255)	
+
+
+
+Employees Table
+
+EmployeeID	INT	Primary Key
+Name	VARCHAR(255)	
+Department	VARCHAR(255)	Foreign Key
+Salary	DECIMAL(10, 2)	
+
+
+ProjectManagers Table
+
+
+ProjectManager	VARCHAR(255)	Primary Key
+ManagerPhone	VARCHAR(255)
+
+
+Projects Table
+
+ProjectID	INT	Primary Key
+ProjectName	VARCHAR(255)	
+ProjectBudget	DECIMAL(15, 2)	
+ProjectManager	VARCHAR(255)	Foreign Key
+
+EmployeeProjects Table
+
+EmployeeID	INT	Primary Key, Foreign Key
+ProjectID	INT	Primary Key, Foreign Key
